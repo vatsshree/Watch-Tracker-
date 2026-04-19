@@ -1,4 +1,4 @@
-const API_KEY = 'AIzaSyDSQcrsnGbvwUNqxWsYYpd7Sz53f3x-27U';
+const API_KEY = 'Your Youtube API Key';
 const cardContainer = document.querySelector('.card');
 
 // Save video data to localStorage before opening video page
