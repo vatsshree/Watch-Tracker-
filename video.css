@@ -1,0 +1,138 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #0f0f0f;
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
+.video-container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.video-player {
+  background: #000;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+#youtube-player {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+
+.video-info {
+  margin-top: 20px;
+  padding: 15px;
+  background: #1a1a1a;
+  border-radius: 12px;
+}
+
+#video-title {
+  color: #fff;
+  margin: 0 0 15px 0;
+  font-size: 20px;
+}
+
+.channel-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.channel-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+#channel-name {
+  color: #aaa;
+  font-size: 14px;
+}
+
+/* Add these to your existing video.css */
+.video-container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.video-player {
+  background: #000;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+#youtube-player {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+
+.video-info {
+  margin-top: 20px;
+  padding: 15px;
+  background: #1a1a1a;
+  border-radius: 12px;
+}
+
+#video-title {
+  color: #fff;
+  margin: 0 0 15px 0;
+  font-size: 20px;
+}
+
+.channel-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.channel-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+#channel-name {
+  color: #aaa;
+  font-size: 14px;
+}
+
+.back-btn {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 8px 16px;
+  background: #272727;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.back-btn:hover {
+  background: #3a3a3a;
+}
+
+/* Dark/Light theme support */
+body.light-theme .video-info {
+  background: #f0f0f0;
+}
+
+body.light-theme #video-title {
+  color: #0f0f0f;
+}
+
+body.light-theme #channel-name {
+  color: #606060;
+}
+
+body.light-theme .back-btn {
+  background: #e0e0e0;
+  color: #0f0f0f;
+}
+
+body.light-theme .back-btn:hover {
+  background: #ccc;
+}
