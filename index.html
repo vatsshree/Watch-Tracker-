@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Youtube_Clone</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <div class="container">
+    <aside>
+      <div class="bars">
+        <div class="bars_icon">
+          <img src="icons/bars.svg" alt="bars">
+        </div>
+        <div class="side-icons">
+          <i>
+            <a href="index.html">
+              <img src="icons/home.svg" alt="home">
+            </a>
+          </i>
+          <p>Home</p>
+        </div>
+        <div class="side-icons">
+          <i>
+            <a href="https://www.youtube.com/shorts/XrMleE_YmEY" target="_blank">
+              <img src="icons/shorts.svg" alt="shorts">
+            </a>
+          </i>
+          <p>Shorts</p>
+        </div>
+        <div class="side-icons">
+          <i>
+            <a href="SUBS.html" target="_blank">
+              <img src="icons/video-gallary.svg" alt="video-gallery">
+            </a>
+          </i>
+          <p>Subscriptions</p>
+        </div>
+        <div class="side-icons">
+          <i>
+            <a href="playlist.html" target="_blank">
+              <img src="icons/playlist-svgrepo-com.svg" alt="playlist">
+            </a>
+          </i>
+          <p>Playlists</p>
+        </div>
+      </div>
+    </aside>
+
+    <div class="main-container">
+      <header>
+        <nav>
+          <div class="logo">
+            <a href="index.html">
+              <img src="images/youtube-logo.png" alt="YouTube logo">
+            </a>
+          </div>
+          <div class="centre-nav">
+            <div class="search">
+              <input type="text" id="search-input" placeholder="Search">
+              <button id="search-button" type="button">
+                <img src="icons/search.svg" alt="search">
+              </button>
+            </div>
+            <div class="mic">
+              <img src="icons/mic.svg" alt="mic" id="mic-btn">
+            </div>
+          </div>
+          <div class="side-nav">
+            <i><img src="icons/video-add.svg" alt="video-add"></i>
+            <i><img src="icons/dot-grid.svg" alt="dot-grid"></i>
+            <i><img src="icons/bell.svg" alt="bell"></i>
+            
+            <!-- User Profile Icon - Fixed to open login page -->
+            <div class="user-profile" id="userProfileBtn" style="cursor: pointer;">
+              <img src="images/avatar.png" height="40" width="40" alt="avatar" id="userAvatar">
+            </div>
+            
+            <!-- Theme Toggle Button -->
+            <button id="theme-toggle" class="theme-toggle" title="Toggle Theme">
+              <svg id="theme-icon" xmlns="http://www.w3.org/2000/svg" height="20" width="20" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M21 12.79A9 9 0 0111.21 3c-.13 0-.26.01-.39.02a.75.75 0 00-.2 1.45A7.5 7.5 0 0012 21a7.48 7.48 0 007.53-6.39.75.75 0 00.47-.82z"/>
+              </svg>
+            </button>
+          </div>
+        </nav>
+        
+        <div class="tags">
+          <div class="tag light" data-query="All">All</div>
+          <div class="tag light" data-query="Mixes">Mixes</div>
+          <div class="tag light" data-query="Cricket">Cricket</div>
+          <div class="tag light" data-query="Virat Kohli">Virat Kohli</div>
+          <div class="tag light" data-query="Remix">Remix</div>
+          <div class="tag light" data-query="Frontend">Frontend</div>
+        </div>
+      </header>
+
+      <main>
+        <div class="card-container">
+          <div class="card">
+            <!-- Video thumbnails injected here by script.js -->
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+  
+  <script src="scripts/script.js"></script>
+  
+  <!-- Video Player Modal -->
+  <div id="videoModal" class="video-modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <div id="videoPlayerContainer">
+        <video id="customVideoPlayer" controls width="100%" style="border-radius: 12px;">
+          <source id="videoSource" src="" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div id="videoInfo" style="margin-top: 15px; padding: 10px;">
+        <h3 id="videoTitle"></h3>
+        <p id="videoChannel"></p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
